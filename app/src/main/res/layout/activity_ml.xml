@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ML_activity">
+
+    <TextView
+        android:id="@+id/Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Cyber Security"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ossec"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        android:elevation="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#CDCDD1"
+        app:cardCornerRadius="190dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Heading">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="190dp">
+
+            <ImageView
+                android:id="@+id/component"
+                android:layout_width="130dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ossec" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/axCrypt"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:elevation="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#CDCDD1"
+        app:cardCornerRadius="190dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Heading">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="190dp">
+
+            <ImageView
+                android:id="@+id/component1"
+                android:layout_width="120dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/axcrypt" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/acunetix"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="40dp"
+        android:elevation="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#CDCDD1"
+        app:cardCornerRadius="190dp"
+        app:layout_constraintEnd_toEndOf="@id/ossec"
+        app:layout_constraintStart_toStartOf="@id/ossec"
+        app:layout_constraintTop_toBottomOf="@id/ossec"
+        tools:layout_editor_absoluteX="44dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="190dp">
+
+            <ImageView
+                android:id="@+id/component2"
+                android:layout_width="110dp"
+                android:layout_height="118dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/acunetix" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/python"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="40dp"
+        android:elevation="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#CDCDD1"
+        app:cardCornerRadius="190dp"
+        app:layout_constraintEnd_toEndOf="@id/axCrypt"
+        app:layout_constraintStart_toStartOf="@id/axCrypt"
+        app:layout_constraintTop_toBottomOf="@id/axCrypt"
+        tools:layout_editor_absoluteX="44dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="190dp">
+
+            <ImageView
+                android:id="@+id/component3"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/python" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/javascript"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="40dp"
+        android:elevation="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#CDCDD1"
+        app:cardCornerRadius="190dp"
+        app:layout_constraintEnd_toStartOf="@id/python"
+        app:layout_constraintStart_toEndOf="@id/acunetix"
+        app:layout_constraintTop_toBottomOf="@id/acunetix"
+        tools:layout_editor_absoluteX="44dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="190dp">
+
+            <ImageView
+                android:id="@+id/component4"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/javascript" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#C5CAE9"
+        android:text="Back"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

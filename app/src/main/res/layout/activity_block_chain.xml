@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".blockChain_activity">
+
+    <TextView
+        android:id="@+id/Heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Blockchain Technology"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cplus"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        android:elevation="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#EBC4FF"
+        app:cardCornerRadius="190dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Heading">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="190dp">
+
+            <ImageView
+                android:id="@+id/component"
+                android:layout_width="140dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cplus" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/solidity"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:elevation="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#EBC4FF"
+        app:cardCornerRadius="190dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Heading">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="190dp">
+
+            <ImageView
+                android:id="@+id/component1"
+                android:layout_width="140dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/solidity" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/metamask"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="40dp"
+        android:elevation="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#EBC4FF"
+        app:cardCornerRadius="190dp"
+        app:layout_constraintEnd_toEndOf="@id/cplus"
+        app:layout_constraintStart_toStartOf="@id/cplus"
+        app:layout_constraintTop_toBottomOf="@id/cplus"
+        tools:layout_editor_absoluteX="44dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="190dp">
+
+            <ImageView
+                android:id="@+id/component2"
+                android:layout_width="140dp"
+                android:layout_height="118dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/metamask" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/geth"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="40dp"
+        android:elevation="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#EBC4FF"
+        app:cardCornerRadius="190dp"
+        app:layout_constraintEnd_toEndOf="@id/solidity"
+        app:layout_constraintStart_toStartOf="@id/solidity"
+        app:layout_constraintTop_toBottomOf="@id/solidity"
+        tools:layout_editor_absoluteX="44dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="190dp">
+
+            <ImageView
+                android:id="@+id/component3"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/geth" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ganache"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="40dp"
+        android:elevation="20dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#EBC4FF"
+        app:cardCornerRadius="190dp"
+        app:layout_constraintEnd_toStartOf="@id/geth"
+        app:layout_constraintStart_toEndOf="@id/metamask"
+        app:layout_constraintTop_toBottomOf="@id/metamask"
+        tools:layout_editor_absoluteX="44dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="190dp">
+
+            <ImageView
+                android:id="@+id/component4"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ganache" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="#C5CAE9"
+        android:text="Back"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
